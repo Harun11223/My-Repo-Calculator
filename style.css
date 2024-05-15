@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.calculator{
+    width:300px;
+    height: 400px;
+    border: 2px solid black;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+table{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-collapse: collapse;
+}
+
+input[type="button"]{
+    font-size: 2rem;
+    cursor: pointer;
+    background-color:black;
+    border: none !important;
+    outline: none;
+    color:#fff;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px auto;
+    display: flex;
+    border: 1px solid #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 3px;
+}
+input[type="button"]:hover{
+    background-color: #646464;
+}
+input[type="button"]:active{
+    color:red;
+}
+input[type="text"]{
+    width: 97%;
+    height: 75px;
+    text-align: right;
+    border: none !important;
+    outline: none !important;
+    font-size:2rem;
+    font-family: bold;
+    margin: 0px auto;
+    display: flex;
+    padding: 5px 2px;
+    font-weight:bold;
+    text-shadow: 0px 0px 1px black;
+    margin-top: -4px;
+}
+small{
+    text-align: right;
+    letter-spacing:1px ;
+    word-spacing: 10px;
+    color:red;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: 22px;
+    font-size: 15px;
+}
+@media (max-width:768px){
+    .calculator{
+        width: 200px;
+        height: 350px;
+        margin:0px auto;
+        border: 1px solid black;
+
+    }
+    input[type="text"]{
+        height: 50px;
+        margin-top: -15px;
+    }
+    input[type="button"]{
+        height: 30px;
+        width: 30px;
+    }
+    
+    small{
+        font-size: 13px;
+        word-spacing: -3px;
+        margin-left: 23px;
+    }
+}
+@media (max-width:320px){
+    .calculator{
+        width: 200px;
+        height: 350px;
+        margin:0px auto;
+        border: 1px solid black;
+
+    }
+    input[type="text"]{
+        height: 50px;
+        margin-top: -15px;
+    }
+    input[type="button"]{
+        height: 30px;
+        width: 30px;
+    }
+    
+    small{
+        font-size: 13px;
+        word-spacing: -3px;
+        margin-left: 23px;
+    }
+}
